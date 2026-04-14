@@ -1,0 +1,24 @@
+# Laravel
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+/storage/app/public/*
+.env
+.env.backup
+.env.production
+*.log
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
