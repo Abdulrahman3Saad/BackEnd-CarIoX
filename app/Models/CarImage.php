@@ -12,10 +12,10 @@ class CarImage extends Model
 
     protected $fillable = ['car_id', 'image_path', 'image_url'];
 
-    // ✅ Accessor: حساب الـ URL ديناميكياً بدل تخزينه — لو غيرت الـ domain مش هيتكسر
+    // ✅ Accessor: حساب الـ URL ديناميكياً
     public function getImageUrlAttribute(): string
     {
-        return asset(Storage::url($this->image_path));
+        return url(Storage::url($this->image_path));
     }
 
     public function car()
